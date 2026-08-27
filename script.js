@@ -1,7 +1,3 @@
-/*
-const hb = document.querySelector("header");
-hb.style.background = "linear-gradient(180deg, #ff3038 0%, #d63a3a 80%, #0a0c0e 100%)";
-*/
 const mnbc = document.getElementById("main-nav");
 mnbc.style.background = "linear-gradient(225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%";
 
@@ -10,30 +6,41 @@ const helppanel = document.getElementById("helpdesk");
 helpicon.addEventListener("click", () => {helppanel.classList.toggle("active")});
 
 const f = document.querySelector("figure");
-const mi = document.getElementById("maininfo");
+const mi = document.getElementById("car-panel");
 f.addEventListener("click", () => {mi.classList.toggle("active")});
 
 const cars = document.querySelectorAll(".car");
 const carpanel = document.getElementById("car-panel")
 
 const panelimage = document.getElementById("carimage");
+const panelprice = document.getElementById("carprice");
 const panelname = document.getElementById("carname");
 const panelpower = document.getElementById("carpower");
 const panelengine = document.getElementById("carengine");
-const panelprice = document.getElementById("carprice");
+const panelseats = document.getElementById("carseats");
+const panelts = document.getElementById("cartopspeed");
+const paneldt = document.getElementById("cardrivetrain");
+const panelaccel = document.getElementById("caraccel");
+const paneltrans = document.getElementById("cartransmission");
 const dimmer = document.getElementById("underlay");
 
 cars.forEach(car => {
     car.addEventListener("click", (event) => {
         event.stopPropagation();
         panelimage.src = car.dataset.image;
-        panelname.textContent = car.dataset.name;
-        panelpower.textContent = car.dataset.power;
-        panelengine.textContent = car.dataset.engine;
         panelprice.textContent = car.dataset.price;
+        panelname.textContent = car.dataset.name;
+        panelpower.textContent = `Measured Power: ${car.dataset.power}`;
+        panelengine.textContent = car.dataset.engine;
+        paneltrans.textContent = car.dataset.trans;
+        panelseats.textContent = `Seating Arrangement: ${car.dataset.seats}`;
+        panelts.textContent = `Top Speed: ${car.dataset.ts}`;
+        paneldt.textContent = `Drivetrain: ${car.dataset.dt}`;
+        panelaccel.textContent = `0-62mph/100kmph: ${car.dataset.accel}`;
 
         carpanel.classList.add("active");
         dimmer.classList.add("active");
+        helppanel.classList.remove("active");
     });
 });
 
