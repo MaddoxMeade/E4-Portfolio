@@ -1,0 +1,251 @@
+*{
+    margin:0;
+}
+body{
+    background-color: #0a0c0e;
+    display:flex;
+    flex-direction:column
+}
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:150px;
+    padding-top:20px;
+    background-color: #d71920;
+}
+svg{
+    color: #15191d;
+}
+
+#header-logo img{
+    max-width: 230px;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,1));
+}
+#main-nav{
+    margin-left: 50px;
+    align-self: center;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.3);
+    max-height:50px;
+    border:2px solid #d71920;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 50px 0 50px 0;
+    transform: skewX(-15deg);
+    padding-left:14px;
+    padding-right:14px;
+}
+#main-nav a:hover{
+    color:#d71920;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    font-family: 'oxanium';
+    padding: 10px;
+    transform: skewX(12deg);
+}
+a{
+    text-decoration: none;
+    color:#f2f4f5;
+}
+a:hover{
+    color: #ff3038;
+}
+#search{
+    align-self: center;
+    max-height:50px;
+}
+#searchbar{
+    font-size:24px;
+    font-family: 'inter';
+    background-color: #15191d;
+    color: #ff3038;
+    border-radius:20px;
+}
+.fa-magnifying-glass{
+    font-size:24px;
+}
+button{
+    background: transparent;
+    border: none;
+    cursor:pointer;
+
+}
+.fa-question, .fa-basket-shopping{
+    font-size:40px;
+}
+#quickhelp{
+    display: flex;
+    flex-direction: column;
+    margin-right:50px;
+    justify-content: center;
+    margin-bottom:20px;
+    gap:20px;
+}
+#gallery{
+    align-self: center;
+    width:95%;
+    margin-top:60px;
+    display: grid;
+    row-gap:40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#car-type{
+    font-family: 'orbitron';
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #f2f4f5;
+}
+.selector{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border:2px solid #2A3036;
+    background-color: #2A3036;
+    border-radius: 5px;
+    padding:5px;
+}
+.selector img{
+    width:200px;
+}
+.selector-text{
+    align-self: center;
+    color:#f2f4f5;
+}
+figure{
+    position:relative;
+    display: block;
+    margin:0;
+    width:480px;
+    height:270px;
+}
+figure img{
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+    height:100%;
+    box-shadow: 0px 0px 5px #fff;
+    transition:0.3s ease;
+}
+figure:hover img{
+    filter: grayscale(100%) brightness(40%);
+}
+figure .initial-cover{
+    font-size: larger;
+    font-family: 'Barlow Condensed';
+    color:white;
+    position:absolute;
+    transition:0.3s ease;
+}
+figure .cover-info{
+    font-size: larger;
+    font-family: 'Barlow Condensed';
+    color:white;
+    position:absolute;
+    opacity:0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s ease;
+}
+figure:hover .initial-cover{
+    opacity: 0;
+}
+figure:hover .cover-info{
+    opacity:1;
+}
+#helpdesk{
+    position:fixed;
+    top:50%;
+    left:25%;
+    width:50%;
+    transform: translateY(-5000%);
+    transition: 0.3s ease;
+    background-color: #f2f4f5;
+    color:black;
+}
+#helpdesk.active{
+    transform: translateY(0);
+}
+#enquiry-help{
+    font-family: 'inter';
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+}
+#enquiry-help textarea,#enquiry-help input{
+    width:33%;
+}
+#enquiry-help textarea{
+    height:3rem;
+}
+#enquiry-help button{
+    border:3px solid black;
+    margin-top: 10px;
+}
+#car-panel{
+    display:flex;
+    position:fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px white;
+    top:25%;
+    left:25%;
+    width:50%;
+    transform: translateX(-200%);
+    transition: 0.5s ease;
+    opacity:0;
+    background-color: #f2f4f5;
+    z-index:10;
+}
+#car-panel.active{
+    opacity:1;
+    transform:translateX(0);
+}
+#imagebox{
+    height:100%;
+    max-width:60%;
+}
+#siding{
+    height:100%;
+    font-size:larger;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:auto;
+    margin-right:20px;
+    padding:10px;
+    align-items: center;
+}
+#details{
+    line-height: 40px;
+}
+#purchasebutton{
+    font-size:2rem;
+    background-color: #d71920;
+    bottom:0;
+}
+#underlay{
+    background-color: rgba(0,0,0,0.75);
+    position:fixed;
+    inset:0;
+    opacity:0;
+    visibility: hidden;
+    z-index:5;
+    transition:0.2s ease ;
+}
+#underlay.active{
+    opacity:1;
+    visibility: visible;
+}

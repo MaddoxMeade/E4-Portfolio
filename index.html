@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EXAUTOS covers exotic vehicles from all eras.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>EXAUTOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="main-nav">
+            <nav>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Featured</li></a>
+                    <a href="#"><li>Favourites</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="header-logo">
+            <img src="images/logo.png">
+        </div>
+        <div id="search">
+            <form id="search-bar">
+                <button type="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" placeholder="Search..." id="searchbar">
+            </form>
+        </div>
+        <div id="quickhelp">
+            <button id="help"><i class="fa-solid fa-question"></i></button>
+        </div>
+    </header>
+
+    <section id="car-type">
+        <div class="selector">
+            <a href="#">
+            <img src="images/hatchback-stock.png"></a>
+            <h2 class="selector-text">Hatchbacks</h2>
+        </div>
+        <div class="selector">
+            <a href="#">
+            <img src="images/sedan-stock.png"></a>
+            <h2 class="selector-text">Sedans</h2>
+        </div>
+        <div class="selector">
+            <a href="#">
+            <img src="images/4x4-stock.png"></a>
+            <h2 class="selector-text">4x4s</h2>
+        </div>
+        <div class="selector">
+            <a href="#">
+            <img src="images/GT-stock.png"></a>
+            <h2 class="selector-text">GTs</h2>
+        </div>
+        <div class="selector">
+            <a href="#">
+            <img src="images/supercar-stock.png"></a>
+            <h2 class="selector-text">Supercars</h2>
+        </div>
+        <div class="selector">
+            <a href="#">
+            <img src="images/hypercar-stock.png"></a>
+            <h2 class="selector-text">Hypercars</h2>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <figure class="car" data-name="2023 Honda e" data-price="£16,595" data-power="144 bhp" data-engine="Electric MCF5 Motor" data-image="images/hondae.jpg">
+            <img src="images/hondae.jpg">
+            <div class="initial-cover"><p>2023 Honda e</p></div>
+            <div class="cover-info">2023 Honda e<br>134hp<br>0-62mph: 8.3s<br>£16,595</div>
+        </figure>
+        <figure class="car" data-name="1991 Honda NSX" data-price="£95,770" data-power="270 bhp" data-engine="3L V6 C30A" data-image="images/hondansx1990.jpg">
+            <img src="images/hondansx1990.jpg">
+            <div class="initial-cover"><p>1991 Honda NSX</p></div>
+            <div class="cover-info">1991 Honda NSX<br>270hp<br>0-62mph: ~5.8s<br>£95,770</div>
+        </figure>
+        <figure class="car" data-name="2019 Honda NSX" data-price="£130,000" data-power="573 bhp" data-engine="3.5L V6TT" data-image="images/hondansx.jpg">
+            <img src="images/hondansx.jpg">
+            <div class="initial-cover"><p>2019 Honda NSX</p></div>
+            <div class="cover-info">2019 Honda NSX<br>573hp<br>0-62mph: 3.3s<br>£130,000</div>
+        </figure>
+        <figure class="car" data-name="2021 Acura NSX Type S" data-price="£200,000" data-power="602 bhp" data-engine="3.5L V6TT" data-image="images/acuransxtypes.jpg">
+            <img src="images/acuransxtypes.jpg">
+            <div class="initial-cover"><p>2019 Acura NSX Type S</p></div>
+            <div class="cover-info">2023 Honda e<br>602 bhp<br>0-62mph: 8.3s<br>£16,595</div>
+        </figure>
+        <figure>
+            <img src="images/venomf5.jpg">
+            <span>dwdwdw</span>
+        </figure>
+        <figure>
+            <img src="images/jesko.jpg">
+            <span>dwdwdw</span>
+        </figure>
+        <figure>
+            <img src="images/f40tribute.jpg">
+            <span>dwdwdw</span>
+        </figure>
+    </section>
+    <div id="helpdesk">
+        <form id="enquiry-help">
+            <h1>Helpdesk</h1>
+            <p><i>Items marked * are optional, but may help us contact you faster.</i></p>
+            <label for="email">Name</label>
+            <input type="text" alt="name" name="name">
+            <label for="email">Email</label>
+            <input type="text" alt="email" name="email">
+            <label for="email">Phone Number*</label>
+            <input type="text" alt="email" name="number">
+            <label for="reason">How can we help?</label>
+            <textarea type="text" alt="reason" name="reason"></textarea>
+            <button>send</button>
+        </form>
+    </div>
+    <div id="underlay"></div>
+    <div id="car-panel">
+        <div class="imagebox">
+            <img id = "carimage" src="">
+        </div>
+        <div id="siding">
+            <div id="details">
+                <h2 id = "carname"></h2><hr>
+                <p id = "carengine"></p>
+                <p id = "carpower"></p><hr>
+                <h3 id = "carprice"></h3>
+            </div>
+            <div id = "purchase">
+                <button id = "purchasebutton">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/27d8bb9f12.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
