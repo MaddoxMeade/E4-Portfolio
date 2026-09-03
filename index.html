@@ -40,65 +40,68 @@
     </header>
 
     <section id="car-type">
-        <div class="selector">
-            <a href="#">
+        <button class="filter" data-filter="all">
             <img src="images/hatchback-stock.png"></a>
-            <h2 class="selector-text">Hatchbacks</h2>
-        </div>
-        <div class="selector">
+            <h2 class="filter-text">All</h2>
+            </button>
+        <button class="filter" data-filter="hatchbacks">
+            <img src="images/hatchback-stock.png"></a>
+            <h2 class="filter-text">Hatchbacks</h2>
+            </button>
+        <button class="filter" data-filter="sedans">
             <a href="#">
             <img src="images/sedan-stock.png"></a>
-            <h2 class="selector-text">Sedans</h2>
-        </div>
-        <div class="selector">
+            <h2 class="filter-text">Sedans</h2>
+            </button>
+        <button class="filter" data-filter="4x4s">
             <a href="#">
             <img src="images/4x4-stock.png"></a>
-            <h2 class="selector-text">4x4s</h2>
-        </div>
-        <div class="selector">
+            <h2 class="filter-text">4x4s</h2>
+            </button>
+        <button class="filter" data-filter="GTs">
             <a href="#">
             <img src="images/GT-stock.png"></a>
-            <h2 class="selector-text">GTs</h2>
-        </div>
-        <div class="selector">
+            <h2 class="filter-text">GTs</h2>
+            </button>
+        <button class="filter" data-filter="supercars">
             <a href="#">
             <img src="images/supercar-stock.png"></a>
-            <h2 class="selector-text">Supercars</h2>
-        </div>
-        <div class="selector">
+            <h2 class="filter-text">Supercars</h2>
+            </button>
+        <button class="filter" data-filter="hypercars">
             <a href="#">
             <img src="images/hypercar-stock.png"></a>
-            <h2 class="selector-text">Hypercars</h2>
-        </div>
+            <h2 class="filter-text">Hypercars</h2>
+            </button>
     </section>
 
     <section id="gallery">
-        <figure class="car" data-name="2023 Honda e" data-price="£16,595" data-power="144 bhp" data-engine="Electric MCF5 Motor" data-image="images/hondae.jpg" data-trans="1-Speed Fixed-Gear" data-seats="2+2" data-ts="90 mph (145 kmph)" data-dt="RWD" data-accel="9.0s">
+        <figure class="vehicle hatchbacks all" data-name="2023 Honda e" data-price="£16,595" data-power="144 bhp" data-engine="Electric MCF5 Motor" data-image="images/hondae.jpg" data-trans="1-Speed Fixed-Gear" data-seats="2+2" data-ts="90 mph (145 kmph)" data-dt="RWD" data-accel="9.0s">
             <img src="images/hondae.jpg">
             <div class="initial-cover"><p>2023 Honda e</p></div>
             <div class="cover-info">2023 Honda e<br>134hp<br>0-62mph: 8.3s<br>£16,595</div>
         </figure>
-        <figure class="car" data-name="1991 Honda NSX" data-price="£95,770" data-power="270 bhp" data-engine="3.0L V6 C30A" data-image="images/hondansx1990.jpg" data-trans="5-Speed Manual" data-seats="2" data-ts="168 mph (270 kmph)" data-dt="RWD" data-accel="5.9s">
+        <figure class="vehicle supercars all" data-name="1991 Honda NSX" data-price="£95,770" data-power="270 bhp" data-engine="3.0L V6 C30A" data-image="images/hondansx1990.jpg" data-trans="5-Speed Manual" data-seats="2" data-ts="168 mph (270 kmph)" data-dt="RWD" data-accel="5.9s">
             <img src="images/hondansx1990.jpg">
             <div class="initial-cover"><p>1991 Honda NSX</p></div>
             <div class="cover-info">1991 Honda NSX<br>270hp<br>0-62mph: ~5.8s<br>£95,770</div>
         </figure>
-        <figure class="car" data-name="2019 Honda NSX" data-price="£130,000" data-power="573 bhp" data-engine="3.5L V6TT" data-image="images/hondansx.jpg" data-trans="9-Speed DCT Automatic" data-seats="2" data-ts="191 mph (307 kmph)" data-dt="SH-AWD" data-accel="3.0s">
+        <figure class="vehicle supercars all" data-name="2019 Honda NSX" data-price="£130,000" data-power="573 bhp" data-engine="3.5L V6TT" data-image="images/hondansx.jpg" data-trans="9-Speed DCT Automatic" data-seats="2" data-ts="191 mph (307 kmph)" data-dt="SH-AWD" data-accel="3.0s">
             <img src="images/hondansx.jpg">
             <div class="initial-cover"><p>2019 Honda NSX</p></div>
             <div class="cover-info">2019 Honda NSX<br>573hp<br>0-62mph: 3.0s<br>£130,000</div>
         </figure>
-        <figure class="car" data-name="2022 Acura NSX Type S" data-price="£200,000" data-power="600 bhp" data-engine="3.5L V6TT" data-image="images/acuransxtypes.jpg" data-trans="9-Speed DCT Automatic" data-seats="2" data-ts="191 mph (307 kmph)" data-dt="SH-AWD" data-accel="~2.9s">
+        <figure class="vehicle supercars all" data-name="2022 Acura NSX Type S" data-price="£200,000" data-power="600 bhp" data-engine="3.5L V6TT" data-image="images/acuransxtypes.jpg" data-trans="9-Speed DCT Automatic" data-seats="2" data-ts="191 mph (307 kmph)" data-dt="SH-AWD" data-accel="~2.9s">
             <img src="images/acuransxtypes.jpg">
             <div class="initial-cover"><p>2019 Acura NSX Type S</p></div>
             <div class="cover-info">2022 Acura NSX Type S<br>600 bhp<br>0-62mph: ~2.9s<br>£200,000</div>
         </figure>
-        <figure class="car" data-name="2021 Hennessey Venom F5 Coupe" data-price="£4,400,000" data-power="1,817 bhp" data-engine="6.6L V8TT Fury" data-image="images/venomf5.jpg" data-trans="7-Speed Paddle-Shift Automatic" data-seats="2" data-ts="311+ mph (500+ kmph)" data-dt="RWD" data-accel="u3.0s">
+        <figure class="vehicle hypercars all" data-name="2021 Hennessey Venom F5 Coupe" data-price="£4,400,000" data-power="1,817 bhp" data-engine="6.6L V8TT Fury" data-image="images/venomf5.jpg" data-trans="7-Speed Paddle-Shift Automatic" data-seats="2" data-ts="311+ mph (500+ kmph)" data-dt="RWD" data-accel="u3.0s">
             <img src="images/venomf5.jpg">
             <div class="initial-cover"><p>2021 Hennessey Venom F5 Coupe</p></div>
             <div class="cover-info">2021 Hennessey Venom F5 Coupe<br>1,817 bhp<br>0-62mph: u3.0s<br>£4,400,000</div>
         </figure>
-        <figure class="car" data-name="2020 Koenigsegg Jesko Absolut" data-price="£4,200,000" data-power="1,600 on E85" data-engine="5.0L V8TT" data-image="images/jesko.jpg" data-trans="9-Speed Light-Speed" data-seats="2" data-ts="311+ mph (500+ kmph)" data-dt="RWD" data-accel="~2.5-2.8s">
+        <figure class="vehicle hypercars all" data-name="2020 Koenigsegg Jesko Absolut" data-price="£4,200,000" data-power="1,600 on E85" data-engine="5.0L V8TT" data-image="images/jesko.jpg" data-trans="9-Speed Light-Speed" data-seats="2" data-ts="311+ mph (500+ kmph)" data-dt="RWD" data-accel="~2.5-2.8s">
             <img src="images/jesko.jpg">
             <div class="initial-cover"><p>2020 Koenigsegg Jesko Absolut</p></div>
             <div class="cover-info">2020 Koenigsegg Jesko Absolut<br>1,600 bhp on E85<br>0-62mph: ~2.5-2.8s<br>£4,200,000</div>

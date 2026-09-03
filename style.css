@@ -110,7 +110,7 @@ button{
     margin-bottom:40px;
     margin-top:40px;
 }
-.selector{
+.filter{
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -119,21 +119,24 @@ button{
     border-radius: 5px;
     padding:5px;
 }
-.selector img{
+.filter img{
     width:200px;
 }
-.selector-text{
+.filter-text{
     align-self: center;
     color:#f2f4f5;
 }
-figure{
+.vehicle{
+    display:none;
+}
+.vehicle.active{
     position:relative;
     display: block;
     margin:0;
     width:480px;
     height:270px;
 }
-figure img{
+.vehicle.active img{
     object-fit: cover;
     object-position: center;
     width:100%;
@@ -141,17 +144,17 @@ figure img{
     box-shadow: 0px 0px 5px #fff;
     transition:0.3s ease;
 }
-figure:hover img{
+.vehicle:hover img{
     filter: grayscale(100%) brightness(40%);
 }
-figure .initial-cover{
+.vehicle .initial-cover{
     font-size: larger;
     font-family: 'Barlow Condensed';
     color:white;
     position:absolute;
     transition:0.3s ease;
 }
-figure .cover-info{
+.vehicle .cover-info{
     font-size: larger;
     font-family: 'Barlow Condensed';
     color:white;

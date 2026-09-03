@@ -9,7 +9,7 @@ const f = document.querySelector("figure");
 const mi = document.getElementById("car-panel");
 f.addEventListener("click", () => {mi.classList.toggle("active")});
 
-const cars = document.querySelectorAll(".car");
+const cars = document.querySelectorAll(".vehicle");
 const carpanel = document.getElementById("car-panel")
 
 const panelimage = document.getElementById("carimage");
@@ -52,4 +52,24 @@ document.addEventListener("click", (event) => {
         carpanel.classList.remove("active")
         dimmer.classList.remove("active")
     }
+});
+
+const filterButtons = document.querySelectorAll("[data-filter]");
+const vehicles = document.querySelectorAll(".vehicle");
+vehicles.forEach(vehicle => {
+    vehicle.classList.add("active");
+});
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        vehicles.forEach(vehicle => {
+            if(filter==="all"|| vehicle.classList.contains(filter)){
+                vehicle.classList.add("active");
+            } else {
+                vehicle.classList.remove("active");
+            }
+        });
+    });
 });
