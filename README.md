@@ -10,6 +10,7 @@ Main things to be worked on:
 - Create a footer sufficient with detailing (20%)
 
 Newest Version boasts:
+- Sales banner
 - New cards for cars
 - Increased car list
 - Changed color palette towards a richer colour scheme
